@@ -1,0 +1,24 @@
+# --- Chaves Privadas (O SEGREDO de hoje) ---
+id_rsa_gerente
+arquivo-key
+chave-mestra
+*.pem
+*.key
+
+# --- Arquivos de estado do Terraform ---
+# (Contém dados sensíveis e o "mapa" da sua infra)
+terraform.tfstate
+terraform.tfstate.backup
+.terraform/
+*.tfvars
+*.tfvars.json
+
+# --- Logs e arquivos temporários ---
+.terraform.lock.hcl
+crash.log
+*.log
+.tfplan
+
+# --- SO Files ---
+Thumbs.db
+.DS_Store

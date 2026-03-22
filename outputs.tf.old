@@ -1,0 +1,7 @@
+output "projeto_status" {
+  value = "Projeto ${var.project_name} inicializado para os cargos: ${join(", ", var.archive_roles)}"
+}
+
+output "my_account_id" {
+  value = data.aws_caller_identity.current.account_id
+}
